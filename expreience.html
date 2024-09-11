@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3: Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div class="max-w-md mx-auto bg-white p-8 mt-10 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">Experience</h3>
+            <div class="experience-block">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="jobTitle">Job Title</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobTitle" type="text" name="jobTitle" placeholder="e.g., Software Developer" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="companyName">Company Name</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="companyName" type="text" name="companyName" placeholder="e.g., ABC Corp" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="jobDuration">Duration</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobDuration" type="text" name="jobDuration" placeholder="e.g., Jan 2020 - Dec 2022" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="jobDescription">Job Description</label>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobDescription" name="jobDescription" placeholder="Briefly describe your responsibilities and achievements" required></textarea>
+                </div>
+            </div>
+            
+            <div id="additional-experience"></div>
+
+            <div class="mb-4">
+                <button id="add-more" type="button" class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold rounded focus:outline-none focus:shadow-outline">Add more</button>
+            </div>
+            <div class="mb-4">
+                <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="saveExperience()">Next and Save</button>
+            </div>
+        </div>
+    </form>
+    <script src="experience.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="max-w-md mx-auto bg-white p-8 mt-10 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Your summary Page</h2>
+        <form >
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="personalSumm">Personal Summary</label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="personalSumm" name="personalSumm" placeholder="e.g., A concise description of your professional experience, skills, and goals." required></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+                <a href="step2.html" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Previous</a>
+                <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="saveSummary()">
+                    Save and Next
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="summary.js"></script>
+</body>
+</html>

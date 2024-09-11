@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2: Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="max-w-md mx-auto bg-white p-8 mt-10 rounded-lg shadow-lg" id="educationlife">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Education Information</h2>
+        <form id="educationForm">
+            <!-- Initial set of education input fields -->
+            <div class="education-block mb-6">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="highestEducation">Highest Education</label>
+                    <input id="highest" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="highestEducation" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="university">University/College</label>
+                    <input id="unive" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="university" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="graduationYear">Year of Graduation</label>
+                    <input id="num" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" name="graduationYear" required>
+                </div>
+            </div>
+
+            <!-- Container for dynamically added education sections -->
+            <div id="additional-educations"></div>
+
+            <!-- Button to add more education fields -->
+             <div>
+            <button type="button" id="add-more" class="mt-4 bg-blue-400 text-white w-full rounded hover:bg-blue-700">ADD MORE EDUCATION</button>
+        </div>
+       
+            <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded focus:outline-none focus:shadow-outline">Previous</button>
+            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 ml-32 rounded focus:outline-none focus:shadow-outline" onclick="saveEducation()">Next and Save</button>
+        
+        </form>
+    </div>
+
+    <script src="education.js"></script>
+</body>
+</html>

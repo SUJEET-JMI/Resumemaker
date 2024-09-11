@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 9:contanct</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <form >
+        <div class="max-w-md mx-auto bg-white p-8 mt-10 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">Contact Details</h3>
+            <div class="mt-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="whatsappno">WhatsApp No</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="whatsappno" type="tel" name="whatsappno" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="LinkedIn">LinkedIn Profile</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="LinkedIn" type="tel" name="LinkedIn" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="contactEmail">Email-ID</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contactEmail" type="email" name="contactEmail" placeholder="e.g., johndoe@example.com" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="git">GitHub Profile</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="git" type="tel" name="git" required>
+            </div>
+            <div>
+                <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="saveContact()">Next and Save</button>
+            </div>
+        </div>
+       
+        
+    
+    </form>
+    <script src="contact.js"></script>
+</body>
+</html>
